@@ -1,0 +1,19 @@
+import java.util.Random;
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Min: ");
+      int min = input.nextInt();
+      
+      System.out.print("Max: ");
+      int max = input.nextInt();
+      
+      Random random = new Random();
+      
+      int randomNumber = random.nextInt(max - min + 1) + min;
+      
+      System.out.println("Resutado: " + min + " y " + max + ": " + randomNumber);
+  }
+}
